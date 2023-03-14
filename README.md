@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+# Shiba Cards v2
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Versión actualizada de [shibaCard](https://github.com/mperezpizarro/shibaCard), proyecto creado originalmente con React y recreado ahora con Vue.
 
-## Recommended IDE Setup
+Muestra una foto al azar relacionada con shibas.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Créditos
+
+- API de los shibas [shibe.online](https://shibe.online)
+- Icono de la web [AomAm](https://www.flaticon.com/free-icons/shiba-inu)
