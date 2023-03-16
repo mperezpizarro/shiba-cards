@@ -1,11 +1,13 @@
 <script setup>
-    import Refresh from './Refresh.vue';
-
     defineProps({
         fetched: Boolean,
         onClick: Function,
         href: String
     })
+
+    function refresh() {
+        window.location.reload()
+    }
 </script>
 
 <template>
@@ -15,13 +17,13 @@
                 REVEAL YOUR <span class="font-black bg-gradient-to-r from-orange-400 to-yellow-700 text-transparent bg-clip-text">SHIBA</span>!
             </h2>
         </div>
-        <div v-show="fetched" class="flex flex-col justify-between h-full">
+        <div v-show="fetched" @click="refresh" class="flex flex-col justify-between h-full cursor-pointer">
             <img 
                 :src="href" 
                 alt="Shiba picture"
-                class="w-full aspect-[9/10] object-cover rounded-lg"
+                class="w-full aspect-[9/11] object-cover rounded-lg"
             />
-            <Refresh />
+            <h4 class="font-bold text-center">Click again to reveal a new Shiba</h4>
         </div>
     </div>
 </template>
