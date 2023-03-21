@@ -7,7 +7,7 @@
     })
 
     function handleShare(href) {
-        navigator.clipboard.writeText = href
+        navigator.clipboard.writeText(href)
 
         toast("Image URL copied to clipboard!", {
             icon: {
