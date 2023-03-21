@@ -1,4 +1,6 @@
 <script setup>
+    import ShareButton from './ShareButton.vue';
+
     defineProps({
         fetched: Boolean,
         onClick: Function,
@@ -11,12 +13,13 @@
 </script>
 
 <template>
-    <div class="w-full max-w-lg aspect-[9/12] mt-6 p-4 shadow-lg rounded-xl bg-white">
+    <div class="w-full max-w-lg aspect-[9/12] mt-6 p-4 shadow-lg rounded-xl bg-white relative">
         <div v-show="!fetched" class="flex items-center justify-center h-full cursor-pointer" @click="onClick">
             <h2 class="text-3xl text-center font-bold">
                 REVEAL YOUR <span class="font-black bg-gradient-to-r from-orange-400 to-yellow-700 text-transparent bg-clip-text">SHIBA</span>!
             </h2>
         </div>
+        <ShareButton v-show="fetched" :href="href" />
         <div v-show="fetched" @click="refresh" class="flex flex-col justify-between h-full cursor-pointer">
             <img 
                 :src="href" 

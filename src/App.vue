@@ -19,7 +19,6 @@ const fetched = ref(false)
 
 function handleClick() {
   fetched.value = true
-  console.log(data)
 }
 </script>
 
