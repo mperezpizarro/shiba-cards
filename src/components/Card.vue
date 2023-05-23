@@ -1,5 +1,6 @@
 <script setup>
-    import ShareButton from './ShareButton.vue';
+    import ShareButton from './Buttons/ShareButton.vue';
+    import ZoomButton from './Buttons/ZoomButton.vue';
 
     defineProps({
         fetched: Boolean,
@@ -20,6 +21,7 @@
             </h2>
         </div>
         <ShareButton v-show="fetched" :href="href" />
+        <ZoomButton v-show="fetched" :href="href" />
         <div v-show="fetched" @click="refresh" class="flex flex-col justify-between h-full cursor-pointer">
             <img 
                 :src="href" 

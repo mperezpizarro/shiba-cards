@@ -1,5 +1,5 @@
 <script setup>
-    import ShareIcon from './ShareIcon.vue';
+    import ShareIcon from '../Icons/ShareIcon.vue';
     import { toast } from 'wc-toast'
 
     defineProps({
