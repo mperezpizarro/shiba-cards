@@ -25,7 +25,7 @@ function handleClick() {
 <template>
   <main class="w-full min-h-screen flex items-center justify-center flex-col px-4 py-2">
     <h1 class="text-3xl font-bold mt-4">Shiba Cards</h1>
-    <h2 class="text-xl text-center mt-2" style="text-wrap: balance;">The shibe.online API no longer exists. This website not functional anymore.</h2>
+    <h2 class="text-xl text-center mt-2" style="text-wrap: balance;">The shibe.online API no longer exists. This website is not functional anymore.</h2>
     <Loading v-show="loading" />
     <Card v-show="!loading" :onClick="handleClick" :fetched="fetched" :href="data" />
     <section class="mt-6 mb-4 flex flex-col gap-4 text-center">
